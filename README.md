@@ -6,6 +6,8 @@
 
 Is a simple plugin to dynamically add iframes into each and every task, based on `task.attributes`.
 
+You could use this plugin to load your own custom CRM system for each inbound call/chat, along with your Knowledge Base and other systems you may have.
+
 ## Installing:
 
 `npm install`
