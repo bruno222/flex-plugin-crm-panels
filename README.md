@@ -4,9 +4,9 @@
 
 ## What:
 
-Is a simple plugin to dynamically add iframes into each and every task, based on `task.attributes`.
+It is a simple Plugin to dynamically add iframes into each and every task, based on `task.attributes`. 
 
-You could use this plugin to load your own custom CRM system for each inbound call/chat, along with your Knowledge Base and other systems you may have.
+The easiest way to load your CRM and other systems into Flex.
 
 ## Installing:
 
