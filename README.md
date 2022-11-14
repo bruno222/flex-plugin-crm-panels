@@ -1,31 +1,31 @@
-# Your custom Twilio Flex Plugin
+## Demo:
 
-Twilio Flex Plugins allow you to customize the appearance and behavior of [Twilio Flex](https://www.twilio.com/flex). If you want to learn more about the capabilities and how to use the API, check out our [Flex documentation](https://www.twilio.com/docs/flex).
+![demo](https://user-images.githubusercontent.com/1012787/201762824-3707cd50-401b-4991-82ec-03c48f5dacde.gif)
 
-## Setup
+## What:
 
-Make sure you have [Node.js](https://nodejs.org) as well as [`npm`](https://npmjs.com). We support Node >= 10.12 (and recommend the _even_ versions of Node). Afterwards, install the dependencies by running `npm install`:
+Is a simple plugin to dynamically add iframes into each and every task, based on `task.attributes`.
 
-```bash
-cd 
+## Installing:
 
-# If you use npm
-npm install
+`npm install`
+
+`twilio flex:plugins:start`
+
+`twilio flex:plugins:deploy --changelog "first deploy"`
+
+## How to use it:
+
+Once installed, create a task with these attributes below:
+
+```
+{"tabs":[
+  {"name":"Bing","url":"https:\/\/www.bing.com\/search?q=Test+123"},
+  {"name":"Best Movies","url":"https:\/\/en.wikipedia.org\/wiki\/List_of_films_considered_the_best"},
+  {"name":"Flex Release Notes","url":"https:\/\/www.twilio.com\/docs\/flex\/release-notes"}
+]}
 ```
 
-Next, please install the [Twilio CLI](https://www.twilio.com/docs/twilio-cli/quickstart) by running:
+For quickly testing this Plugin, go to TaskRouter and create a Task manually, it will look something like the screenshot below:
 
-```bash
-brew tap twilio/brew && brew install twilio
-```
-
-Finally, install the [Flex Plugin extension](https://github.com/twilio-labs/plugin-flex/tree/v1-beta) for the Twilio CLI:
-
-```bash
-twilio plugins:install @twilio-labs/plugin-flex
-```
-
-## Development
-
-Run `twilio flex:plugins --help` to see all the commands we currently support. For further details on Flex Plugins refer to our documentation on the [Twilio Docs](https://www.twilio.com/docs/flex/developer/plugins/cli) page.
-
+<img width="50%" alt="image" src="https://user-images.githubusercontent.com/1012787/201761348-0f3ba2a9-3072-41cc-b4e6-531acf77c91f.png">
